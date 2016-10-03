@@ -22,6 +22,11 @@
 
 		<tr><td>
 		<label>Дополнительно:</label>
+		<select name="custom_id">
+		{% for name in CUSTOM_CONTACTS_IDS %}
+		<option>{{name}}</option>
+		{% endfor %}
+		</select>
 		<input name="custom_str" type="text"></input>
 		</td></tr>
 
